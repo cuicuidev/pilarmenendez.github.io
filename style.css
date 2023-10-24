@@ -70,7 +70,7 @@ nav a {
 }
 
 .landing hr {
-    background-color: var(--secondary);
+    background-color: var(--secondary-accent);
 
     height: 2px;
     min-width: 80vw;
@@ -90,7 +90,7 @@ nav a {
     border-style: solid;
     border-radius: 50%;
     border-width: 1px;
-    border-color: var(--secondary);
+    border-color: var(--secondary-accent);
     overflow: hidden;
 }
 
@@ -107,14 +107,39 @@ nav a {
 
 #portfolio {
     color: var(--primary);
-    background-color: var(--background-light);
+    background-color: var(--background);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     min-height: 100vh;
-    padding: 10vw;
+    padding: 4rem;
+    padding-top: 1rem;
+}
+
+.portfolio-card {
+    color: var(--primary);
+    background-color: var(--secondary);
+
+    border-style: solid;
+    border-color: var(--secondary-accent);
+    border-width: 1px;
+
+    filter: drop-shadow(5px 5px 0px);
+
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+
+.portfolio-card:hover {
+    transform: translateX(1px) translateY(1px);
+    filter: drop-shadow(4px 4px 0px);
+}
+
+.portfolio-card p {
+    color: var(--background-light);
 }
 
 /*TESTIMONIALS =================================================================================================*/
@@ -127,8 +152,8 @@ nav a {
     flex-direction: column;
     align-items: center;
 
-    min-height: 100vh;
-    padding: 10vw;
+    padding: 4rem;
+    padding-top: 1rem;
 }
 
 /*CONTACT =================================================================================================*/
@@ -141,19 +166,43 @@ nav a {
     flex-direction: column;
     align-items: center;
 
-    min-height: 70vh;
-    padding: 10vw;
+    padding: 4rem;
+    padding-top: 1rem;
+}
+
+#contact-options-container {
+    width: 100%;
+    padding-top: 1rem;
+
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact-options-container img{
+    height: 15vw;
 }
 
 /*FOOTER =================================================================================================*/
 
 footer {
-    color: var(--primary);
-    background-color: var(--background);
+    color: var(--background-light);
+    background-color: var(--secondary);
 
     display: flex;
     flex-direction: column;
 
-    min-height: 30vh;
-    padding: 5vw;
+    justify-content: end;
+
+    padding: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--primary-accent);
 }
