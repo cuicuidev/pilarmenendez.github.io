@@ -101,7 +101,7 @@ nav a {
     aspect-ratio: 1/1;
 }
 
-/*MAIN =================================================================================================*/
+/*MAIN ======================================================================================================*/
 
 /*PORTFOLIO =================================================================================================*/
 
@@ -128,15 +128,26 @@ nav a {
 
     filter: drop-shadow(5px 5px 0px);
 
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 1rem;
 
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
 }
 
-.portfolio-card:hover {
-    transform: translateX(1px) translateY(1px);
-    filter: drop-shadow(4px 4px 0px);
+@media only screen and (min-width: 768px){
+    .portfolio-card:hover {
+        transform: translateX(1px) translateY(1px);
+        filter: drop-shadow(4px 4px 0px var(--primary-accent));
+    }
 }
+
 
 .portfolio-card p {
     color: var(--background-light);
@@ -181,6 +192,18 @@ nav a {
 
 #contact-options-container img{
     height: 15vw;
+
+    filter: drop-shadow(4px 4px 0 var(--primary));
+}
+
+@media only screen and (min-width: 768px) {
+
+    #contact-options-container img:hover{
+        transform: translateX(1px) translateY(1px);
+    
+        filter: drop-shadow(3px 3px 0 var(--primary-accent));
+    }
+
 }
 
 /*FOOTER =================================================================================================*/
@@ -193,6 +216,7 @@ footer {
     flex-direction: column;
 
     justify-content: end;
+    align-items: center;
 
     padding: 2rem;
 }
