@@ -141,14 +141,6 @@ nav a {
 
 }
 
-@media only screen and (min-width: 768px){
-    .portfolio-card:hover {
-        transform: translateX(1px) translateY(1px);
-        filter: drop-shadow(4px 4px 0px var(--primary-accent));
-    }
-}
-
-
 .portfolio-card p {
     color: var(--background-light);
 }
@@ -194,16 +186,6 @@ nav a {
     height: 15vw;
 
     filter: drop-shadow(4px 4px 0 var(--primary));
-}
-
-@media only screen and (min-width: 768px) {
-
-    #contact-options-container img:hover{
-        transform: translateX(1px) translateY(1px);
-    
-        filter: drop-shadow(3px 3px 0 var(--primary-accent));
-    }
-
 }
 
 /*FOOTER =================================================================================================*/
