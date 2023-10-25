@@ -1,0 +1,119 @@
+/*GLOBAL =================================================================================================*/
+
+:root {
+    --primary: #136956;
+    --primary-accent: #0c9678;
+    --secondary: #cc8f99;
+    --secondary-accent: #e3788a;
+    --background: #f8f1de;
+    --background-light: #fffcf4;
+  }
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 48px;
+    }    
+}
+/*HEADER =================================================================================================*/
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 64px;
+    }
+
+    nav li {
+        font-size: 24px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #00000000;
+
+    }
+
+    nav li:hover {
+        border-bottom-color: var(--secondary);
+    }
+    
+    .landing p {
+        font-size: 24px;
+        max-width: 45vw;
+    }
+    
+    .landing hr {
+        border: none;
+        height: 0;
+        min-width: 60vw;
+    
+        margin: 0;
+    }
+    
+    .avatar-container {
+        width: 25%;
+        padding: 1%;
+    }
+    
+    .avatar {
+        border-width: 2px;
+    }
+
+}
+/*MAIN ======================================================================================================*/
+
+/*PORTFOLIO =================================================================================================*/
+
+@media only screen and (min-width: 768px){
+    #portfolio {
+        color: var(--primary);
+        background-color: var(--background);
+    
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, auto);
+
+        justify-items: center;
+    
+        min-height: 100vh;
+        padding: 2rem 15vw;
+    }
+
+    #portfolio > :first-child {
+        grid-column: 2 span;
+    }
+    
+    .portfolio-card {
+        margin-top: 0;
+
+        min-height: 30vh;
+    }
+
+    .portfolio-card:hover {
+        transform: translateX(1px) translateY(1px);
+        filter: drop-shadow(4px 4px 0px var(--primary-accent));
+    }
+}
+
+/*TESTIMONIALS =================================================================================================*/
+
+/*CONTACT =================================================================================================*/
+
+@media only screen and (min-width: 768px) {
+
+    #contact-options-container {
+        justify-content: space-evenly;
+    }
+    
+    #contact-options-container img{
+        height: 116px;
+    
+        filter: drop-shadow(4px 4px 0 var(--primary));
+    }
+
+    #contact-options-container img:hover{
+        transform: translateX(1px) translateY(1px);
+    
+        filter: drop-shadow(3px 3px 0 var(--primary-accent));
+    }
+
+}
+
+/*FOOTER =================================================================================================*/
